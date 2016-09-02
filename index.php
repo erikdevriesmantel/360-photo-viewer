@@ -7,7 +7,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv='content-type' content='text/html; charset=utf-8' />
 
-      <title>Mantel 360 Viewer</title>
+      <title>Mantel 360</title>
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -33,7 +33,7 @@
           table-layout: fixed;
           height: 100%;
           min-width: 100%;
-          padding-bottom: 75px; /*MINUS THE BUTTON BAR*/
+          padding-bottom: 75px;
         }
         #container {
           display: table-cell;
@@ -43,9 +43,6 @@
           width: 100%;
           position: relative;
         }
-        /* END - VERTICAL ALIGN MIDDLE 360 VIEWER*/
-
-
         #container .threesixty {
           position: relative;
           margin: 0 auto;
@@ -147,9 +144,9 @@
           }); 
 
             product1 = $('.product1').ThreeSixty({
-                totalFrames: 20, // Total no. of image you have for 360 slider
-                endFrame: 20, // end frame for the auto spin animation
-                currentFrame: 1, // This the start frame for auto spin
+                totalFrames: 20,
+                endFrame: 20,
+                currentFrame: 1,
                 imgList: '.threesixty_images', // selector for image list
                 progress: '.spinner', // selector to show the loading progress
                 imagePath:'assets/', // path of the image assets
